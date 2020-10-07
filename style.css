@@ -1,0 +1,202 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: #22242e;
+  color: #ffffff;
+  font-family: "Montserrat" , san-serif;
+  margin:0 0;
+}
+
+.logo {
+  width: 180px;
+  height: 50px;
+  margin: 20px 20px;
+}
+
+.slide-one {
+  display:flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.mock-phone {
+  width: 175px;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.tagline {
+  padding: 10px;
+}
+
+p {
+  color: #dfdfdf;
+}
+
+.slide-two {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.three-phones {
+  width: 300px;
+  padding: 20px;
+}
+
+.PFM-text {
+  padding:10px;
+}
+
+
+.request-access {
+  color: #fff;
+  background: #5C5AE4;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.request-access:hover {
+  background: rgba(92, 90, 228, 80%);
+}
+
+
+.slide-three {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #2e2e34;
+  border-bottom: 1px solid #2e2e34;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.features-box:not(:last-child) {
+  border-right: 1px solid #2e2e34;
+}
+
+.features-box {
+  object-fit: contain;
+  padding: 20px;
+}
+
+.slide-three img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.slide-four {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.mac {
+  width: 320px;
+  padding: 20px;
+  height: 170px;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #0d0c0f;
+  margin-bottom: 10px;
+}
+
+.social-logo  {
+  margin-left:20px;
+  text-decoration: none;
+}
+
+ul li {
+  display: inline;
+}
+
+ul {
+  padding: 0 0;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: #fff;
+  padding: 0 20px;
+  line-height: 2em;
+}
+
+.footer-links:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.foot-note {
+  margin-left: 20px;
+  line-height: 2em;
+  font-size: smaller;
+  color: grey;
+  padding-bottom: 10px;
+}
+
+/* Responsive display for Phones n Tablets */
+
+@media only screen and (max-width: 700px) {
+
+.slide-one {
+  flex-direction: column;
+  text-align: left;
+}
+
+.mock-phone {
+  margin-top: 70px;
+}
+
+.request-access {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.slide-two {
+  flex-direction: column-reverse;
+}
+
+.three-phones {
+  margin-top: 50px;
+}
+
+.slide-three {
+  flex-direction: column;
+}
+
+.features-box {
+  border-right: none  !important;
+}
+
+.features-box:not(:last-child) {
+  border-bottom: 1px solid #2e2e34;
+}
+
+.slide-three img {
+  margin-top: 10px;
+}
+
+.slide-four {
+  flex-direction: column;
+  text-align: left;
+}
+
+.mac {
+  margin-top: 50px;
+}
