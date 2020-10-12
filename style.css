@@ -150,6 +150,22 @@ ul {
   padding-bottom: 10px;
 }
 
+
+/* Privacy and terms styling */
+.pp-terms {
+  line-height: 1.5em;
+  margin-left: 60px;
+  width: 90%;
+}
+
+.subterms{
+  list-style: lower-roman;
+}
+
+.subsubterms{
+  list-style-type: lower-alpha;
+}
+
 /* Responsive display for Phones n Tablets */
 
 @media only screen and (max-width: 700px) {
@@ -199,4 +215,11 @@ ul {
 
 .mac {
   margin-top: 50px;
+}
+}
+/* Responsive display for Phones n Tablets */
+@media only screen and (min-width: 1150px) {
+  .slide-one {
+    height: 75vh;
+  }
 }
