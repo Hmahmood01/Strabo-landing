@@ -10,20 +10,17 @@ body {
 }
 
 nav{
-
   height: 100px;
   position: sticky;
   top: 0;
-
-
 }
 
 .logo {
   width: 180px;
   height: 50px;
   margin: 30px 20px;
-
 }
+
 .navbar{
   display: flex;
   align-items: center;
@@ -32,22 +29,20 @@ nav{
   height: 10vh;
   width = 100%;
   opacity: 0.99;
-       box-shadow: 0px 15px 10px -15px #222420;
-
+  box-shadow: 0px 15px 10px -15px #222420;
 }
 
 .navlist{
-
   margin-right: 20px;
     line-height: 100px;
 }
+
 .nav-item{
   text-decoration: none;
   color: #fff;
   padding: 0 20px;
   line-height: 100px;
   font-weight:500;
-
 }
 
 .nav-item:hover {
@@ -66,10 +61,7 @@ nav{
   margin: 5px;
   background-color: #dfdfdf;
   transition: all 0.3s ease;
-
 }
-
-
 
 .slide-one {
   display:flex;
@@ -94,34 +86,25 @@ p {
   color: #dfdfdf;
 }
 
+p li{
+  color: #dfdfdf;
+}
+
 .coming-soon {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  margin: 50px 10vw 100px 10vw;
+
 }
 
-
-
-.slide-two {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-.three-phones {
-  width: 300px;
+.mac {
+  width: 70vw;
   padding: 20px;
 }
 
-.PFM-text {
-  padding:10px;
-}
 
 .request-accessnav {
   color: #fff;
@@ -156,8 +139,8 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   max-width: 90vw;
-  margin-right: 10%;
-  margin-left: 10%;
+  margin-right: 10vw;
+  margin-left: 10vw;
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -165,10 +148,12 @@ p {
 
 
 .features-box {
-  width: 25%;
+  width: 22vw;
   object-fit: contain;
-    align-items: center;
+  align-items: center;
   padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .features{
@@ -188,26 +173,17 @@ p {
   transform: scale(1.2);
 }
 
+.feature-links{
+  text-decoration:none;
+  color: inherit;
+}
+
+
 .slide-three img {
   width: 50px;
   height: 50px;
   object-fit: contain;
   padding: 10px;
-}
-
-.slide-four {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
-}
-
-.mac {
-  width: 70vw;
-  padding: 20px;
-
 }
 
 footer {
@@ -225,7 +201,7 @@ footer {
   text-decoration: none;
 }
 
-ul li {
+ul li{
   display: inline;
 }
 
@@ -253,12 +229,218 @@ ul {
   padding-bottom: 10px;
 }
 
+/* features page styling */
+
+.features-page{
+  margin: 0 10vw ;
+}
+.mainfeature{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.feature-image{
+  width: 40vw;
+}
+
+.feature-card{
+  padding: 25px ;
+  width: 40vw;
+  color: #dfdfdf;
+}
+
+.fcard-border{
+  width: 5px;
+  background-color: #fff;
+}
+
+.features-description{
+  display: list-item;
+  color: #dfdfdf;
+}
+
+
+
+/* Pricing Page styling */
+.ppcontainer{
+  margin: 20px 10vw;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.pricing-plan{
+  width: 300px;
+  border-radius: 25px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.pricing-plan--highlighted{
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+
+}
+
+.ppheader{
+  margin-left: 0;
+  padding: 20px;
+  text-align: center;
+  background-color: #5C5AE4;
+}
+
+.ppdescription{
+  margin-left: 0;
+  padding: 20px;
+}
+
+.ppfeature{
+  display: block;
+  color: #dfdfdf;
+  font-size: 0.9em;
+  line-height: 2em;
+}
+
+.ppfeature::before{
+  content: "\2714";
+  color: #4AC18F;
+  left: 0;
+}
+
+.ppfeatureno{
+  display: block;
+  color: #dfdfdf;
+  font-size: 0.9em;
+  line-height: 2em;
+}
+
+.ppfeatureno::before{
+  content: "\00274C";
+  color: #FE7172;
+  left: 0;
+}
+
+.ppaction{
+  padding: 20px;
+  margin-left:0;
+  border-top: 1px solid #2e2e34;
+  justify-content: center;
+  text-align: center;
+}
+
+.ppcost{
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.pptext{
+  font-size: 0.9em;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.pptext2{
+  font-size: 0.9em;
+  margin-top: 30px;
+
+}
+
+/* About page styling */
+
+.slide-two {
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh;
+  margin: 0 10vw;
+}
+
+.three-phones {
+  width: 300px;
+  padding: 20px;
+}
+
+.PFM-text {
+  padding:10px;
+}
+
+.slide-four {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 100px 10vw 100px 10vw;
+}
+
+.FAQ{
+  display: column;
+  margin: 0 10vw;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 80vw;
+}
+
+.FAQtab-question{
+  background-color: #5C5AE4;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bold;
+  border: 0.5px solid #22242e;
+}
+
+.FAQtab-question:hover{
+  opacity: .85;
+}
+
+.FAQtab-question::after{
+  content: '\276F';
+  transition: all 0.3s ease;
+}
+
+.tab-toggle:checked ~ .FAQtab-question::after{
+  transform: rotate(90deg);
+}
+
+.FAQ-answer{
+  max-height: 0;
+  overflow: hidden;
+  background: #ABA5DB;
+  color: #0d0c0f;
+  padding: 0 1em;
+  transition: all 0.3s ease;
+}
+
+.tab-toggle{
+  display: none;
+}
+
+.tab-toggle:checked ~ .FAQ-answer{
+  max-height: inherit;
+  padding: 1em;
+  transition: all 0.3s ease;
+}
+
+.tab-toggle:checked ~ .FAQtab-question{
+  opacity: .85;
+}
+
+
 
 /* Privacy and terms styling */
+
+
 .pp-terms {
   line-height: 1.5em;
   margin-left: 60px;
-  width: 90%;
+  width: 80%;
+  color: #dfdfdf;
 }
 
 .subterms{
@@ -308,6 +490,8 @@ body{
 .slide-one {
   flex-direction: column;
   text-align: left;
+  margin: 50px 10vw 100px 10vw;
+  font-size: 0.8em;
 }
 
 .mock-phone {
@@ -330,8 +514,12 @@ body{
 .slide-three {
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
+.slide-three h2{
+  font-size: 1em;
+}
 .features-box {
     width: 60vw;
     justify-content: center;
@@ -351,8 +539,39 @@ body{
 }
 
 .mac {
-  margin-top: 50px;
+  margin-top: 10px;
+  width: 80vw;
 }
+
+
+.feature-page{
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.mainfeature{
+flex-direction: column;
+}
+
+.feature-image{
+width:300px;
+}
+
+.feature-card{
+width:300px;
+padding: 25px;
+font-size: 0.8em;
+}
+
+
+.ppcontainer{
+  flex-direction: column;
+}
+
+.pricing-plan{
+  margin-bottom: 30px;
 }
 
 .nav-active{
@@ -379,6 +598,9 @@ body{
 .toggle .line3{
   transform:  rotate(45deg) translate(-5px,-6px);
 }
+}
+
+
 /* Responsive display for large screens */
 @media only screen and (min-width: 1150px) {
   .slide-one {
